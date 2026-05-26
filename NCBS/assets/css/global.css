@@ -179,11 +179,11 @@
 :root {
 	
 	/* #1F78FF in decimal RGB */
-  --main-color: rgb(31,120,255);
-  --main-color-rgb: 31,120,255;
+  --main-color: rgb(45,70,105);
+  --main-color-rgb: 45,70,105;
   
   /* #16133A in decimal RGB */
-  --color-two: rgb(22,19,58);
+  --color-two: rgb(28,35,54);
   --color-two-rgb: 22,19,58;
   
   /* #F6C410 in decimal RGB */
@@ -647,15 +647,21 @@
 
 ***/
 
-body {
-	font-family: 'Gordita';
-	font-size:14px;
+/* body {
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
 	color:var(--text-color);
-	line-height:1.6em;
+	line-height:1.8em;
 	font-weight:400;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-}
+} */
+body { font-family: 'Gordita';
+     font-size:14px; color:var(--text-color); 
+     line-height:1.6em;
+     font-weight:400;
+     -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased; }
 
 .row {
 	--bs-gutter-x: 30px;
