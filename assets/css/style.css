@@ -570,6 +570,68 @@
 
 /*** 
 
+
+/* ==========================
+   CLIENTS SECTION
+========================== */
+
+.clients-section{
+    padding:100px 0;
+    background:#F9FCFA;
+}
+
+.clients-section .section-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.clients-section h2{
+    color:#2D4669;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.clients-section p{
+    color:#5B6678;
+    max-width:650px;
+    margin:0 auto;
+}
+.clients-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:50px 70px;
+}
+
+.client-logo{
+    background:none;
+    border:none;
+    box-shadow:none;
+    height:auto;
+    padding:0;
+}
+
+.client-logo img{
+    filter:none;
+    opacity:1;
+    max-width:150px;
+}
+
+.client-logo:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(45,70,105,0.08);
+
+}
+
+.client-logo:hover img{
+    filter:none;
+    opacity:1;
+}
+
+
+
+
+
 ====================================================================
 	Services Section
 ====================================================================
@@ -829,6 +891,80 @@
 .case-block .arrow:hover{
 	background-color:var(--main-color);
 }
+
+
+/*=====================================
+PARTNERS CAROUSEL
+=====================================*/
+
+.partners-section{
+    position:relative;
+    padding:110px 0;
+    background:var(--color-eight);
+}
+
+.partners-slider{
+    overflow:hidden;
+    width:100%;
+    margin-top:50px;
+}
+
+.partners-track{
+    display:flex;
+    gap:30px;
+    width:max-content;
+    animation:partnerScroll 50s linear infinite;
+}
+
+.partners-slider:hover .partners-track{
+    animation-play-state:paused;
+}
+
+.partner-card{
+    width:230px;
+    height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:#ffffff;
+    border:1px solid var(--color-four);
+    flex-shrink:0;
+    transition:.3s;
+}
+
+.partner-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(45,70,105,0.08);
+}
+
+.partner-card img{
+    max-width:140px;
+    max-height:60px;
+    object-fit:contain;
+    filter:grayscale(100%);
+    opacity:.75;
+    transition:.3s;
+}
+
+.partner-card:hover img{
+    filter:none;
+    opacity:1;
+}
+
+@keyframes partnerScroll{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-50%);
+    }
+
+}
+
+
 
 /*** 
 
