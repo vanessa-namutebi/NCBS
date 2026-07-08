@@ -179,8 +179,8 @@
 :root {
 	
 	/* #1F78FF in decimal RGB */
-  --main-color: rgb(45,70,105);
-  --main-color-rgb: 45,70,105;
+  --main-color: rgb(42, 140, 95);
+  --main-color-rgb: 42, 140, 95;
   
   /* #16133A in decimal RGB */
   --color-two: rgb(28,35,54);
