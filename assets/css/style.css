@@ -781,7 +781,7 @@
 }
 
 .case-section .outer-container{
-	max-width:1800px;
+	max-width:1400px;
 	margin:0 auto;
 	padding:0px 15px;
 }
@@ -1928,6 +1928,7 @@ PARTNERS CAROUSEL
 	position:relative;
 	overflow:hidden;
 	padding:80px 0px 90px;
+	padding: 0 15px;
 }
 
 .case-section-two .color-vector{
@@ -1942,6 +1943,8 @@ PARTNERS CAROUSEL
 
 .case-section-two .inner-container{
 	position:relative;
+	max-width:1400px;
+    margin:0 auto;
 }
 
 .case-section-two .inner-container:before{
