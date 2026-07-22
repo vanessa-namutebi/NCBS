@@ -5606,3 +5606,66 @@ PARTNERS CAROUSEL
 .color-palate{
 	display:none;
 }
+
+/* WhatsApp Widget */
+
+.whatsapp-widget{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    z-index:9999;
+}
+
+.whatsapp-button{
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:28px;
+    background:#25D366;
+    color:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.whatsapp-popup{
+    width:320px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    display:none;
+}
+
+.popup-header{
+    background:#25D366;
+    color:#fff;
+    padding:15px;
+    font-weight:700;
+}
+
+.popup-body{
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+.whatsapp-chat-btn{
+    display:block;
+    text-align:center;
+    padding:15px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.whatsapp-chat-btn:hover{
+    background:#1fa855;
+	color:#ffffff;
+}
+
+.whatsapp-popup.show{
+    display:block;
+}

@@ -1140,6 +1140,44 @@
 	<!-- End Header Search -->
 	
 </div>
+
+
+<!-- WhatsApp Chat Widget -->
+<div class="whatsapp-widget">
+
+    <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="popup-header">
+            NCBS Support
+        </div>
+
+        <div class="popup-body">
+            👋 Hi there!<br><br>
+
+            Looking for:
+            <br>• Accounting Support
+            <br>• IT Support
+            <br>• Remote Professionals
+            <br>• Training Opportunities
+            <br><br>
+
+            Click below to chat with us on WhatsApp.
+        </div>
+
+        <a href="https://wa.me/256760116676?text=Hello%20NCBS,%20I%20would%20like%20more%20information."
+           target="_blank"
+           class="whatsapp-chat-btn">
+            Start Chat
+        </a>
+    </div>
+
+    <button class="whatsapp-button" id="whatsappButton">
+		<i class="fa-brands fa-whatsapp"></i>
+    </button>
+
+</div>
+
+
+
 	
 <!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
@@ -1162,6 +1200,24 @@
 <script src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/color-settings.js"></script>
+<script>
+const whatsappButton = document.getElementById("whatsappButton");
+const whatsappPopup = document.getElementById("whatsappPopup");
+
+whatsappButton.addEventListener("click", function() {
+    whatsappPopup.classList.toggle("show");
+});
+document.addEventListener("click", function(event){
+
+    if(
+        !whatsappPopup.contains(event.target) &&
+        !whatsappButton.contains(event.target)
+    ){
+        whatsappPopup.classList.remove("show");
+    }
+
+});
+</script>
 
 </body>
 </html>
