@@ -4966,7 +4966,8 @@ PARTNERS CAROUSEL
 
 .blog-detail .comments-area .comment-box .comment{
 	position:relative;
-	padding-left:var(--padding-left-110);
+	padding-left:var(--padding-zero);
+	padding-right:var(--padding-right-110);
 }
 
 .blog-detail .comments-area .comment-box:last-child{
@@ -4974,18 +4975,11 @@ PARTNERS CAROUSEL
 }
 
 .blog-detail .comments-area .reply-comment{
-	padding-left:var(--padding-left-110);
+	padding-left:var(--padding-zero);
 }
 
 .blog-detail .comments-area .comment-box .author-thumb{
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:90px;
-	height:90px;
-	overflow:hidden;
-	border-radius:50%;
-	margin-bottom:var(--margin-bottom-20);
+	display:none;
 }
 
 .blog-detail .comments-area .comment-box .author-thumb img{
@@ -5025,7 +5019,7 @@ PARTNERS CAROUSEL
 
 .blog-detail .comments-area .comment-box .reply-btn{
 	position:absolute;
-	top:-10px;
+	top:0px;
 	right:0px;
 	font-weight:400;
 	padding:5px 14px;

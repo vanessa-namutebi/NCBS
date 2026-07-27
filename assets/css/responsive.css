@@ -996,12 +996,18 @@
 	
 	.blog-detail .comments-area .comment-box .comment{
 		padding-left:var(--padding-zero);
+		padding-right:var(--padding-zero);
 	}
 	
 	.blog-detail .comments-area .comment-box .author-thumb{
+		display:none;
+	}
+
+	.blog-detail .comments-area .comment-box .reply-btn{
 		position:relative;
-		display:block;
-		margin-bottom: var(--margin-bottom-20);
+		top:auto;
+		right:auto;
+		margin-top:var(--margin-top-15);
 	}
 	
 	.rtl .news-block .comment,
