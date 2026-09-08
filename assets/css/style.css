@@ -776,6 +776,10 @@
 	padding-top:var(--padding-top-5);
 }
 
+.case-section.style-two .pattern-layer{
+	bottom:-50px;
+}
+
 .case-section .sec-title{
 	margin-bottom:var(--margin-bottom-120);
 }
